@@ -1,0 +1,28 @@
+// @import 'colors';
+// @import 'mixins';
+
+body {
+  perspective: 100px;
+  font-family: Helvetica;
+  color: white;
+  letter-spacing: 1px;
+  margin: 0;
+  overflow: hidden;
+  background: black;
+}
+
+a {
+  color: white;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.page-content {
+}
+
+.about, .contact, .home, .team { .page-content; }
+
+.landing {
+  display: flex;
+}
