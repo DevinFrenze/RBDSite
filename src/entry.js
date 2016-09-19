@@ -3,8 +3,9 @@ import {render} from 'react-dom'
 import { Redirect, Router, Route, hashHistory } from 'react-router'
 // import {About, Contact, Gallery, Home, Team} from './components';
 import { About, Contact, Home, Team } from './components'
-import { Nav } from './components'
+import { Nav, Social } from './components'
 import 'styles/main'
+import 'styles/landing'
 
 class App extends React.Component {
   render () {
@@ -12,7 +13,14 @@ class App extends React.Component {
       <div>
         <div className='landing'>
           <Nav />
-          {this.props.children}
+          <div className='landing__center'>
+            <div className='landing__center__content'>
+              <div className='bottom-left'/>
+              {this.props.children}
+              <div className='top-right'/>
+            </div>
+          </div>
+          <Social />
         </div>
       </div>
     )
