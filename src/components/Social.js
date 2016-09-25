@@ -6,16 +6,16 @@ class Social extends React.Component {
     return (
         <div className='social'>
           <a href="https://www.facebook.com/realboydigital">
-            <i class="fa fa-facebook"></i>
+            <span className="fa fa-facebook">f</span>
           </a>
           <a href="https://twitter.com/RealBoyDigital">
-            <i class="fa fa-twitter"></i>
+            <span className="fa fa-twitter">t</span>
           </a>
           <a href="https://instagram.com/realboydigital/">
-            <i class="fa fa-instagram"></i>
+            <span className="fa fa-instagram">i</span>
           </a>
           <a href="https://vimeo.com/channels/rbd">
-            <i class="fa fa-vimeo-square"></i>
+            <span className="fa fa-vimeo-square">v</span>
           </a>
         </div>
     )
