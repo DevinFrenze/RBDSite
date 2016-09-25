@@ -1,23 +1,31 @@
+@import (reference) 'main';
+
 .social {
-  width: 25vw;
-  height: 100vh;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
+  display: none;
 }
 
-.sovial a {
-  color: white;
-  text-decoration: none;
-}
+@media (min-width: @sm) {
+  .social {
+    width: @side-width;
+    height: 100vh;
 
-.social > * {
-  @size: 32px;
-  margin: 8px 32px;
-  width: @size;
-  height: @size;
-  border-radius: @size;
-  border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .sovial a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .social > * {
+    @size: 32px;
+    margin: 8px 32px;
+    width: @size;
+    height: @size;
+    border-radius: @size;
+    border: 2px solid white;
+  }
 }

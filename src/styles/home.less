@@ -1,0 +1,31 @@
+@import (reference) 'main';
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @letter: 48px;
+  height: ~"calc(100% - 2 * @{letter})";
+  text-transform: uppercase;
+  font-size: @letter;
+  padding: @letter;
+
+  & > * {
+    line-height: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .center-piece {
+    @size: 30vh;
+    @min-size: 15vw;
+    width: @size;
+    min-width: @min-size;
+    height: @size;
+    min-height: @min-size;
+    border-radius:  @size;
+    border: 2px solid white;
+  }
+}

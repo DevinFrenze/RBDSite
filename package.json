@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "real boy digital website",
   "main": "index.js",
+  "repository": "https://github.com/DevinFrenze/RBDSite",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --progress --inline --colors --hot --config webpack-dev.config.js",
@@ -33,6 +34,7 @@
     "lodash": "^4.14.1",
     "react": "^15.3.0",
     "react-dom": "^15.3.0",
+    "react-fontawesome": "^1.2.0",
     "react-router": "^2.8.1",
     "whatwg-fetch": "^1.0.0"
   }
